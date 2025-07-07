@@ -8,12 +8,40 @@
 </head>
 <body class="bg-light">
 
+  <!-- ✅ NAVBAR met dropdown -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="#">Tajweedles</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Lessen
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="les1.html">Les 1: Inleiding</a></li>
+              <li><a class="dropdown-item" href="les2.html">Les 2: Makhārij</a></li>
+              <li><a class="dropdown-item" href="les3.html">Les 3: Sifāt</a></li>
+              <li><a class="dropdown-item" href="les4.html">Les 4: Qalqalah</a></li>
+              <!-- Voeg meer lessen toe -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
+  <!-- ✅ Lesinhoud -->
   <div class="container mt-5">
     <div class="card shadow-sm">
       <div class="card-body">
@@ -110,10 +138,12 @@
     </div>
   </div>
 
+  <!-- ✅ Footer -->
   <footer class="bg-dark text-white text-center py-3 mt-5">
     &copy; 2025 Tajweedles. Alle rechten voorbehouden.
   </footer>
 
+  <!-- ✅ Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
