@@ -94,12 +94,58 @@
 
   <hr>
 
-  <!-- Placeholder secties voor de volgende hoofdgebieden -->
+  <!-- Sectie Tong toegevoegd -->
   <section id="tong" class="my-5">
     <h2>Tong (al-Lisaan)</h2>
     <p>
-      (Nog uit te werken) Hier bespreken we de makhaarij die vanuit de tong worden uitgesproken, zoals letters ل, ر, ط, د, ت, ص, س.
+      De tong is een belangrijk orgaan bij het uitspreken van veel Arabische letters. In het Arabisch noemen we de tong <strong>“Al-Lisaan”</strong>. Afhankelijk van welk deel van de tong je gebruikt en waar die de klank raakt, ontstaan verschillende letters.
     </p>
+    <p><strong>Belangrijke delen van de tong:</strong></p>
+    <ul>
+      <li>Punt van de tong (Al-Qimmah)</li>
+      <li>Midden van de tong (Al-Wasat)</li>
+      <li>Achterkant van de tong (Al-Akhrā)</li>
+      <li>Zijkanten van de tong (Al-Ajanib)</li>
+    </ul>
+
+    <h3>📺 Video-uitleg Tong (al-Lisaan)</h3>
+    <div class="ratio ratio-16x9 mb-4">
+      <iframe src="https://www.youtube.com/embed/RZGG9ixEfB4" title="Tong en Makhaarij uitleg" allowfullscreen></iframe>
+    </div>
+
+    <h3>📝 Quiz over Tong (al-Lisaan)</h3>
+    <form id="quizFormTong">
+      <div class="mb-3">
+        <label class="form-label">1. Wat is de Arabische term voor de tong?</label>
+        <select class="form-select" name="vraag1" required>
+          <option value="">-- Kies een antwoord --</option>
+          <option value="al_halq">Al-Halq</option>
+          <option value="al_lisaan">Al-Lisaan</option>
+          <option value="ash_shafataan">Ash-Shafataan</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">2. Welk deel van de tong wordt “Al-Qimmah” genoemd?</label>
+        <select class="form-select" name="vraag2" required>
+          <option value="">-- Kies een antwoord --</option>
+          <option value="punt_tong">Punt van de tong</option>
+          <option value="midden_tong">Midden van de tong</option>
+          <option value="achterkant_tong">Achterkant van de tong</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">3. Waar bevinden zich de “Al-Ajanib”?</label>
+        <select class="form-select" name="vraag3" required>
+          <option value="">-- Kies een antwoord --</option>
+          <option value="zijkanten_tong">Zijkanten van de tong</option>
+          <option value="achterkant_tong">Achterkant van de tong</option>
+          <option value="punt_tong">Punt van de tong</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Antwoorden controleren</button>
+    </form>
+
+    <div id="feedbackTong" class="mt-3"></div>
   </section>
 
   <section id="lippen" class="my-5">
@@ -157,7 +203,35 @@
       feedbackEl.style.color = 'red';
     }
   });
+
+  // Quiz functionaliteit tong
+  document.getElementById('quizFormTong').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const feedbackEl = document.getElementById('feedbackTong');
+    const antwoord1 = this.vraag1.value;
+    const antwoord2 = this.vraag2.value;
+    const antwoord3 = this.vraag3.value;
+
+    let score = 0;
+    const totaal = 3;
+
+    if (antwoord1 === 'al_lisaan') score++;
+    if (antwoord2 === 'punt_tong') score++;
+    if (antwoord3 === 'zijkanten_tong') score++;
+
+    feedbackEl.innerHTML = `Je hebt ${score} van de ${totaal} vragen goed.`;
+
+    if (score === totaal) {
+      feedbackEl.innerHTML += ' Goed gedaan! 🎉';
+      feedbackEl.style.color = 'green';
+    } else {
+      feedbackEl.innerHTML += ' Probeer het nog eens.';
+      feedbackEl.style.color = 'red';
+    }
+  });
 </script>
 
 </body>
 </html>
+
