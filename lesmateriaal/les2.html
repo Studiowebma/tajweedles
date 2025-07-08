@@ -1,3 +1,22 @@
+<!-- Navigatie binnen de les -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm mb-4">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Makhaarij Navigatie</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBinnenLes">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navBinnenLes">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#keel">Keel</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tong">Tong</a></li>
+        <li class="nav-item"><a class="nav-link" href="#lippen">Lippen</a></li>
+        <li class="nav-item"><a class="nav-link" href="#neus">Neus</a></li>
+        <li class="nav-item"><a class="nav-link" href="#mondholte">Mondholte</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <!-- Keel -->
   <section id="keel" class="my-5">
     <h2>Keel (al-Halq)</h2>
@@ -72,5 +91,120 @@
 
 <!-- Lippen -->
 <section id="lippen" class="my-5">
-  ... (rest blijft ongewijzigd)
+  <h2>Lippen (ash-Shafataan)</h2>
+  <p>De lippen produceren vier Arabische letters:</p>
+  <ul>
+    <li><strong>ف (faa):</strong> bovenste voortanden op de onderlip</li>
+    <li><strong>ب (baa), م (meem), و (waaw):</strong> beide lippen tegen elkaar</li>
+  </ul>
+  <p>Elke letter heeft een unieke beweging van de lippen nodig, en het correct gebruik van deze makhraj is belangrijk voor een duidelijke uitspraak.</p>
+  <div class="ratio ratio-16x9 mb-4">
+    <iframe src="https://www.youtube.com/embed/HOXUK7_Xslk" title="Lippen uitleg" allowfullscreen></iframe>
+  </div>
+  <form id="quizFormLippen">
+    <div class="mb-3">
+      <label>Welke letter wordt uitgesproken door de bovenste voortanden op de onderlip?</label>
+      <select class="form-select" name="vraag1" required>
+        <option value="">-- Kies --</option>
+        <option value="faa">ف (faa)</option>
+        <option value="baa">ب (baa)</option>
+        <option value="meem">م (meem)</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label>Welke letters worden uitgesproken met beide lippen tegen elkaar?</label>
+      <select class="form-select" name="vraag2" required>
+        <option value="">-- Kies --</option>
+        <option value="baa_meem_waaw">ب, م, و</option>
+        <option value="faa_baa">ف, ب</option>
+        <option value="meem_waaw">م, و</option>
+      </select>
+    </div>
+    <button class="btn btn-primary">Antwoorden controleren</button>
+  </form>
+  <div id="feedbackLippen" class="mt-3"></div>
+</section>
+
+<!-- Neus -->
+<section id="neus" class="my-5">
+  <h2>Neus (al-Khayshoem)</h2>
+  <p>
+    De neusklank, ook wel <strong>ghunnah</strong> genoemd, is een neuzige klank die hoort bij de letters <strong>ن (noon)</strong> en <strong>م (meem)</strong> wanneer ze worden uitgesproken met een neusstem.
+  </p>
+  <p>
+    De ghunnah komt niet uit de mond of keel, maar vanuit de neusholte. Dit maakt het een uniek makhraj. De lengte van de ghunnah hangt af van de Tajweed-regels, maar de oorsprong blijft hetzelfde.
+  </p>
+  <ul>
+    <li>Bijvoorbeeld in het woord: <strong>إِنَّ</strong> wordt de ن uitgesproken met ghunnah.</li>
+    <li>Ook bij <strong>ثُمَّ</strong> komt ghunnah voor bij de letter م.</li>
+  </ul>
+  <div class="ratio ratio-16x9 mb-4">
+    <iframe src="https://www.youtube.com/embed/RX4gJoCE_7Y" title="Ghunnah uitleg" allowfullscreen></iframe>
+  </div>
+  <form id="quizFormNeus">
+    <div class="mb-3">
+      <label>Wat is de oorsprong van de ghunnah-klank?</label>
+      <select class="form-select" name="vraag1" required>
+        <option value="">-- Kies --</option>
+        <option value="neusholte">De neusholte</option>
+        <option value="mond">De mond</option>
+        <option value="keel">De keel</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label>Welke twee letters worden met ghunnah uitgesproken?</label>
+      <select class="form-select" name="vraag2" required>
+        <option value="">-- Kies --</option>
+        <option value="noon_meem">ن en م</option>
+        <option value="faa_kaaf">ف en ك</option>
+        <option value="ghayn_ayn">غ en ع</option>
+      </select>
+    </div>
+    <button class="btn btn-primary">Antwoorden controleren</button>
+  </form>
+  <div id="feedbackNeus" class="mt-3"></div>
+</section>
+
+<!-- Mondholte -->
+<section id="mondholte" class="my-5">
+  <h2>Mondholte (al-Jawf)</h2>
+  <p>
+    De mondholte is verantwoordelijk voor de klanken van de lange klinkers in het Arabisch. Dit zijn de medeklinkers <strong>ا (alif)</strong>, <strong>و (waaw)</strong> en <strong>ي (yaa)</strong> wanneer zij als verlengde klinkers worden gebruikt (dus zonder een fatha, kasra of damma erop).
+  </p>
+  <p>
+    Deze klanken worden niet uitgesproken vanaf een specifiek fysiek punt, maar worden gevormd door de lucht die door de open mondholte stroomt. Ze worden daarom vaak gezien als "luchtklanken" of "klanken zonder specifieke makhraj".
+  </p>
+  <ul>
+    <li><strong>ا (alif):</strong> wordt uitgesproken na een fatha</li>
+    <li><strong>و (waaw):</strong> wordt uitgesproken na een damma</li>
+    <li><strong>ي (yaa):</strong> wordt uitgesproken na een kasra</li>
+  </ul>
+  <p>
+    Deze klinkers worden meestal twee tellen aangehouden, tenzij Tajweed-regels verlenging vereisen.
+  </p>
+  <div class="ratio ratio-16x9 mb-4">
+    <iframe src="https://www.youtube.com/embed/WyGVR7FAV9I" title="Mondholte uitleg" allowfullscreen></iframe>
+  </div>
+  <form id="quizFormMondholte">
+    <div class="mb-3">
+      <label>Welke letters behoren tot de lange klinkers van de mondholte?</label>
+      <select class="form-select" name="vraag1" required>
+        <option value="">-- Kies --</option>
+        <option value="alif_waaw_yaa">ا, و, ي</option>
+        <option value="ba_kaaf_laam">ب, ك, ل</option>
+        <option value="raa_daal_thaa">ر, د, ث</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label>Waar worden deze klanken gevormd?</label>
+      <select class="form-select" name="vraag2" required>
+        <option value="">-- Kies --</option>
+        <option value="mondholte">In de open mondholte</option>
+        <option value="neusholte">In de neusholte</option>
+        <option value="keel">In de keel</option>
+      </select>
+    </div>
+    <button class="btn btn-primary">Antwoorden controleren</button>
+  </form>
+  <div id="feedbackMondholte" class="mt-3"></div>
 </section>
