@@ -94,52 +94,45 @@
 
   <hr>
 
-  <!-- Sectie Tong toegevoegd -->
+  <!-- Sectie Tong (al-Lisaan) -->
   <section id="tong" class="my-5">
     <h2>Tong (al-Lisaan)</h2>
     <p>
-      De tong is een belangrijk orgaan bij het uitspreken van veel Arabische letters. In het Arabisch noemen we de tong <strong>“Al-Lisaan”</strong>. Afhankelijk van welk deel van de tong je gebruikt en waar die de klank raakt, ontstaan verschillende letters.
+      De tong is het meest veelzijdige orgaan voor het uitspreken van de meeste Arabische letters. 
+      Er zijn verschillende plaatsen op de tong die de uitspraak van letters bepalen:
     </p>
-    <p><strong>Belangrijke delen van de tong:</strong></p>
     <ul>
-      <li>Punt van de tong (Al-Qimmah)</li>
-      <li>Midden van de tong (Al-Wasat)</li>
-      <li>Achterkant van de tong (Al-Akhrā)</li>
-      <li>Zijkanten van de tong (Al-Ajanib)</li>
+      <li><strong>Tip van de tong (Al-Lisaan Al-Nathi’ah):</strong> letters zoals <strong>ت (taa)</strong>, <strong>د (dal)</strong>, <strong>ط (taa’)</strong>.</li>
+      <li><strong>Rand van de tong (Al-Lisaan Al-Janibi):</strong> letters zoals <strong>س (seen)</strong>, <strong>ص (saad)</strong>.</li>
+      <li><strong>Midden van de tong (Al-Lisaan Al-Wusta):</strong> letters zoals <strong>ر (raa)</strong>, <strong>ل (laam)</strong>.</li>
     </ul>
+    <p>
+      De juiste articulatie van deze letters is cruciaal voor correcte Tajweed-uitspraak.
+    </p>
 
     <h3>📺 Video-uitleg Tong (al-Lisaan)</h3>
     <div class="ratio ratio-16x9 mb-4">
-      <iframe src="https://www.youtube.com/embed/RZGG9ixEfB4" title="Tong en Makhaarij uitleg" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/RZGG9ixEfB4" title="Makhaarij al-Huruf - Tong uitleg" allowfullscreen></iframe>
     </div>
 
     <h3>📝 Quiz over Tong (al-Lisaan)</h3>
     <form id="quizFormTong">
       <div class="mb-3">
-        <label class="form-label">1. Wat is de Arabische term voor de tong?</label>
+        <label class="form-label">1. Welke letters komen uit de tip van de tong?</label>
         <select class="form-select" name="vraag1" required>
           <option value="">-- Kies een antwoord --</option>
-          <option value="al_halq">Al-Halq</option>
-          <option value="al_lisaan">Al-Lisaan</option>
-          <option value="ash_shafataan">Ash-Shafataan</option>
+          <option value="taa_dal_taa">ت (taa), د (dal), ط (taa’)</option>
+          <option value="raa_laam">ر (raa), ل (laam)</option>
+          <option value="seen_saad">س (seen), ص (saad)</option>
         </select>
       </div>
       <div class="mb-3">
-        <label class="form-label">2. Welk deel van de tong wordt “Al-Qimmah” genoemd?</label>
+        <label class="form-label">2. Uit welk deel van de tong komt de letter ر (raa)?</label>
         <select class="form-select" name="vraag2" required>
           <option value="">-- Kies een antwoord --</option>
-          <option value="punt_tong">Punt van de tong</option>
+          <option value="tip_tong">Tip van de tong</option>
           <option value="midden_tong">Midden van de tong</option>
-          <option value="achterkant_tong">Achterkant van de tong</option>
-        </select>
-      </div>
-      <div class="mb-3">
-        <label class="form-label">3. Waar bevinden zich de “Al-Ajanib”?</label>
-        <select class="form-select" name="vraag3" required>
-          <option value="">-- Kies een antwoord --</option>
-          <option value="zijkanten_tong">Zijkanten van de tong</option>
-          <option value="achterkant_tong">Achterkant van de tong</option>
-          <option value="punt_tong">Punt van de tong</option>
+          <option value="rand_tong">Rand van de tong</option>
         </select>
       </div>
       <button type="submit" class="btn btn-primary">Antwoorden controleren</button>
@@ -148,6 +141,9 @@
     <div id="feedbackTong" class="mt-3"></div>
   </section>
 
+  <hr>
+
+  <!-- Placeholder secties voor de volgende hoofdgebieden -->
   <section id="lippen" class="my-5">
     <h2>Lippen (ash-Shafataan)</h2>
     <p>
@@ -211,14 +207,12 @@
     const feedbackEl = document.getElementById('feedbackTong');
     const antwoord1 = this.vraag1.value;
     const antwoord2 = this.vraag2.value;
-    const antwoord3 = this.vraag3.value;
 
     let score = 0;
-    const totaal = 3;
+    const totaal = 2;
 
-    if (antwoord1 === 'al_lisaan') score++;
-    if (antwoord2 === 'punt_tong') score++;
-    if (antwoord3 === 'zijkanten_tong') score++;
+    if (antwoord1 === 'taa_dal_taa') score++;
+    if (antwoord2 === 'midden_tong') score++;
 
     feedbackEl.innerHTML = `Je hebt ${score} van de ${totaal} vragen goed.`;
 
@@ -234,4 +228,3 @@
 
 </body>
 </html>
-
