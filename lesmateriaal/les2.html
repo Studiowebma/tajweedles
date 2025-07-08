@@ -1,163 +1,245 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Les 2 - Makhaarij al-Huruf | Tajweedles</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style.css" />
-</head>
-<body>
-
-<!-- Navigatie -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="../index.html">Tajweedles</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="../over.html">Over</a></li>
-        <li class="nav-item"><a class="nav-link active" href="../lessen.html">Lessen</a></li>
-        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Lesinhoud -->
-<section class="container py-5">
-  <h1 class="text-center mb-4">Les 2: Makhaarij al-Huruf</h1>
-
-  <p class="lead">
-    Het correct uitspreken van de Arabische letters vanuit hun juiste plaats in de mond, keel of neus noemen we <strong>Makhaarij al-Huruf</strong>.  
-    Er zijn vijf hoofdgebieden van waaruit de letters worden uitgesproken:
+<!-- Sectie Tong -->
+<section id="tong" class="my-5">
+  <h2>Tong (al-Lisaan)</h2>
+  <p>
+    De tong bevat de meeste makhaarij. Hieronder vallen letters zoals:
   </p>
+  <ul>
+    <li>ل (laam)</li>
+    <li>ر (raa)</li>
+    <li>ط (taa)</li>
+    <li>د (daal)</li>
+    <li>ت (taa)</li>
+    <li>ص (saad)</li>
+    <li>س (seen)</li>
+  </ul>
 
-  <ol>
-    <li><a href="#keel">Keel (al-Halq)</a>: bevat 3 makhaarij, voor letters zoals ع, ح, خ.</li>
-    <li><a href="#tong">Tong (al-Lisaan)</a>: bevat de meeste makhaarij – voor letters zoals ل, ر, ط, د, ت, ص, س.</li>
-    <li><a href="#lippen">Lippen (ash-Shafataan)</a>: voor letters zoals ف, ب, م, و.</li>
-    <li><a href="#neus">Neus (al-Khayshoem)</a>: voor het neengeluid van ن en م bij ghunnah.</li>
-    <li><a href="#mondholte">Mondholte (al-Jawf)</a>: voor de lange klinkers alif, waaw en yaa (als medeklinker).</li>
-  </ol>
+  <h3>📺 Video-uitleg Tong (al-Lisaan)</h3>
+  <div class="ratio ratio-16x9 mb-4">
+    <iframe src="https://www.youtube.com/embed/RZGG9ixEfB4" title="Makhaarij al-Huruf - Tong uitleg" allowfullscreen></iframe>
+  </div>
 
-  <hr>
-
-  <!-- Sectie Keel -->
-  <section id="keel" class="my-5">
-    <h2>Keel (al-Halq)</h2>
-    <p>
-      De keel is verdeeld in drie delen, die elk hun eigen letters produceren:
-    </p>
-    <ul>
-      <li><strong>Diepe keel (Al-Halq Al-Akhdam):</strong> letters <strong>ء (hamza)</strong> en <strong>ه (haa)</strong>.</li>
-      <li><strong>Midden keel (Al-Halq Al-Wusta):</strong> letters <strong>ع (‘Ayn)</strong> en <strong>ح (Haa)</strong>.</li>
-      <li><strong>Voorste keel (Al-Halq Al-Adna):</strong> letters <strong>غ (Ghayn)</strong> en <strong>خ (Khaa)</strong>.</li>
-    </ul>
-    <p>
-      Het correct uitspreken van deze letters is essentieel voor een juiste Tajweed-recitaties.
-    </p>
-
-    <h3>📺 Video-uitleg Keel (al-Halq)</h3>
-    <div class="ratio ratio-16x9 mb-4">
-      <iframe src="https://www.youtube.com/embed/CTl-qpxTty0" title="Makhaarij al-Huruf - Keelholte uitleg" allowfullscreen></iframe>
+  <h3>📝 Quiz over Tong (al-Lisaan)</h3>
+  <form id="quizFormTong">
+    <div class="mb-3">
+      <label class="form-label">1. Welke letter is NIET uitgesproken vanuit de tong?</label>
+      <select class="form-select" name="vraag1" required>
+        <option value="">-- Kies een antwoord --</option>
+        <option value="haa">ح (haa)</option>
+        <option value="laam">ل (laam)</option>
+        <option value="raa">ر (raa)</option>
+      </select>
     </div>
-
-    <h3>📝 Quiz over Keel (al-Halq)</h3>
-    <form id="quizFormKeel">
-      <div class="mb-3">
-        <label class="form-label">1. Welke letters komen uit het diepe keelgedeelte?</label>
-        <select class="form-select" name="vraag1" required>
-          <option value="">-- Kies een antwoord --</option>
-          <option value="hamza_haa">ء (hamza) en ه (haa)</option>
-          <option value="ayn_haa">ع (‘Ayn) en ح (haa)</option>
-          <option value="ghayn_khaa">غ (Ghayn) en خ (Khaa)</option>
-        </select>
-      </div>
-      <div class="mb-3">
-        <label class="form-label">2. Uit welk keelgedeelte komt de letter ‘Ayn (ع)?</label>
-        <select class="form-select" name="vraag2" required>
-          <option value="">-- Kies een antwoord --</option>
-          <option value="deep_keel">Diepe keel</option>
-          <option value="midden_keel">Midden van de keel</option>
-          <option value="voorste_keel">Voorste keel</option>
-        </select>
-      </div>
-      <button type="submit" class="btn btn-primary">Antwoorden controleren</button>
-    </form>
-
-    <div id="feedbackKeel" class="mt-3"></div>
-  </section>
-
-  <hr>
-
-  <!-- Placeholder secties voor de volgende hoofdgebieden -->
-  <section id="tong" class="my-5">
-    <h2>Tong (al-Lisaan)</h2>
-    <p>
-      (Nog uit te werken) Hier bespreken we de makhaarij die vanuit de tong worden uitgesproken, zoals letters ل, ر, ط, د, ت, ص, س.
-    </p>
-  </section>
-
-  <section id="lippen" class="my-5">
-    <h2>Lippen (ash-Shafataan)</h2>
-    <p>
-      (Nog uit te werken) Hier bespreken we letters die met de lippen worden uitgesproken, zoals ف, ب, م, و.
-    </p>
-  </section>
-
-  <section id="neus" class="my-5">
-    <h2>Neus (al-Khayshoem)</h2>
-    <p>
-      (Nog uit te werken) Hier bespreken we het neengeluid (ghunnah) bij letters zoals ن en م.
-    </p>
-  </section>
-
-  <section id="mondholte" class="my-5">
-    <h2>Mondholte (al-Jawf)</h2>
-    <p>
-      (Nog uit te werken) Hier bespreken we de lange klinkers alif, waaw en yaa (als medeklinker).
-    </p>
-  </section>
-
+    <div class="mb-3">
+      <label class="form-label">2. Welke van deze letters hoort bij de tongmakhaarij?</label>
+      <select class="form-select" name="vraag2" required>
+        <option value="">-- Kies een antwoord --</option>
+        <option value="seen">س (seen)</option>
+        <option value="baa">ب (baa)</option>
+        <option value="khaa">خ (khaa)</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Antwoorden controleren</button>
+  </form>
+  <div id="feedbackTong" class="mt-3"></div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-  &copy; 2025 Tajweedles. Alle rechten voorbehouden.
-</footer>
+<hr>
 
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Sectie Lippen -->
+<section id="lippen" class="my-5">
+  <h2>Lippen (ash-Shafataan)</h2>
+  <p>
+    De lippen zijn de makhaarij voor letters zoals:
+  </p>
+  <ul>
+    <li>ف (faa)</li>
+    <li>ب (baa)</li>
+    <li>م (meem)</li>
+    <li>و (waaw)</li>
+  </ul>
+
+  <h3>📺 Video-uitleg Lippen (ash-Shafataan)</h3>
+  <div class="ratio ratio-16x9 mb-4">
+    <iframe src="https://www.youtube.com/embed/ntRJZLWur0w" title="Makhaarij al-Huruf - Lippen uitleg" allowfullscreen></iframe>
+  </div>
+
+  <h3>📝 Quiz over Lippen (ash-Shafataan)</h3>
+  <form id="quizFormLippen">
+    <div class="mb-3">
+      <label class="form-label">1. Welke letter wordt uitgesproken met de lippen?</label>
+      <select class="form-select" name="vraag1" required>
+        <option value="">-- Kies een antwoord --</option>
+        <option value="faa">ف (faa)</option>
+        <option value="seen">س (seen)</option>
+        <option value="ghayn">غ (ghayn)</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">2. Welke letter hoort NIET bij de lippenmakhaarij?</label>
+      <select class="form-select" name="vraag2" required>
+        <option value="">-- Kies een antwoord --</option>
+        <option value="baa">ب (baa)</option>
+        <option value="meem">م (meem)</option>
+        <option value="daal">د (daal)</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Antwoorden controleren</button>
+  </form>
+  <div id="feedbackLippen" class="mt-3"></div>
+</section>
+
+<hr>
+
+<!-- Sectie Neus -->
+<section id="neus" class="my-5">
+  <h2>Neus (al-Khayshoem)</h2>
+  <p>
+    De neus is verantwoordelijk voor het neengeluid (ghunnah) bij de letters:
+  </p>
+  <ul>
+    <li>ن (noen)</li>
+    <li>م (meem)</li>
+  </ul>
+
+  <h3>📺 Video-uitleg Neus (al-Khayshoem)</h3>
+  <div class="ratio ratio-16x9 mb-4">
+    <iframe src="https://www.youtube.com/embed/oRCRGxlktn0" title="Makhaarij al-Huruf - Neus uitleg" allowfullscreen></iframe>
+  </div>
+
+  <h3>📝 Quiz over Neus (al-Khayshoem)</h3>
+  <form id="quizFormNeus">
+    <div class="mb-3">
+      <label class="form-label">1. Welke letter produceert het neussound (ghunnah)?</label>
+      <select class="form-select" name="vraag1" required>
+        <option value="">-- Kies een antwoord --</option>
+        <option value="noen">ن (noen)</option>
+        <option value="raa">ر (raa)</option>
+        <option value="yaa">ي (yaa)</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">2. Welke letter is ook een neusletter bij ghunnah?</label>
+      <select class="form-select" name="vraag2" required>
+        <option value="">-- Kies een antwoord --</option>
+        <option value="meem">م (meem)</option>
+        <option value="taa">ت (taa)</option>
+        <option value="saad">ص (saad)</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Antwoorden controleren</button>
+  </form>
+  <div id="feedbackNeus" class="mt-3"></div>
+</section>
+
+<hr>
+
+<!-- Sectie Mondholte -->
+<section id="mondholte" class="my-5">
+  <h2>Mondholte (al-Jawf)</h2>
+  <p>
+    De mondholte is de plaats van uitspraak voor de lange klinkers en bepaalde medeklinkers:
+  </p>
+  <ul>
+    <li>Alif (ا) - lange a-klank</li>
+    <li>Waaw (و) - lange u-klank</li>
+    <li>Yaa (ي) - lange i-klank (als medeklinker)</li>
+  </ul>
+
+  <h3>📺 Video-uitleg Mondholte (al-Jawf)</h3>
+  <div class="ratio ratio-16x9 mb-4">
+    <iframe src="https://www.youtube.com/embed/3XKFoZlq2ZI" title="Makhaarij al-Huruf - Mondholte uitleg" allowfullscreen></iframe>
+  </div>
+
+  <h3>📝 Quiz over Mondholte (al-Jawf)</h3>
+  <form id="quizFormMondholte">
+    <div class="mb-3">
+      <label class="form-label">1. Welke letter is een lange klinker uitgesproken vanuit de mondholte?</label>
+      <select class="form-select" name="vraag1" required>
+        <option value="">-- Kies een antwoord --</option>
+        <option value="alif">ا (alif)</option>
+        <option value="baa">ب (baa)</option>
+        <option value="meem">م (meem)</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">2. Welke letter is GEEN lange klinker vanuit de mondholte?</label>
+      <select class="form-select" name="vraag2" required>
+        <option value="">-- Kies een antwoord --</option>
+        <option value="yaa">ي (yaa)</option>
+        <option value="raa">ر (raa)</option>
+        <option value="waaw">و (waaw)</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Antwoorden controleren</button>
+  </form>
+  <div id="feedbackMondholte" class="mt-3"></div>
+</section>
+
+<!-- Scripts voor alle quizzen -->
 <script>
-  // Quiz functionaliteit keel
-  document.getElementById('quizFormKeel').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    const feedbackEl = document.getElementById('feedbackKeel');
-    const antwoord1 = this.vraag1.value;
-    const antwoord2 = this.vraag2.value;
-
+  // Quiz Keel
+  document.getElementById('quizFormKeel').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const feedback = document.getElementById('feedbackKeel');
+    const a1 = this.vraag1.value;
+    const a2 = this.vraag2.value;
     let score = 0;
-    const totaal = 2;
+    if (a1 === 'hamza_haa') score++;
+    if (a2 === 'midden_keel') score++;
+    feedback.textContent = `Je hebt ${score} van de 2 vragen goed.`;
+    feedback.style.color = score === 2 ? 'green' : 'red';
+  });
 
-    if (antwoord1 === 'hamza_haa') score++;
-    if (antwoord2 === 'midden_keel') score++;
+  // Quiz Tong
+  document.getElementById('quizFormTong').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const feedback = document.getElementById('feedbackTong');
+    const a1 = this.vraag1.value;
+    const a2 = this.vraag2.value;
+    let score = 0;
+    if (a1 === 'haa') score++; // vraag is welke NIET uit tong komt, haa komt uit keel dus goed
+    if (a2 === 'seen') score++;
+    feedback.textContent = `Je hebt ${score} van de 2 vragen goed.`;
+    feedback.style.color = score === 2 ? 'green' : 'red';
+  });
 
-    feedbackEl.innerHTML = `Je hebt ${score} van de ${totaal} vragen goed.`;
+  // Quiz Lippen
+  document.getElementById('quizFormLippen').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const feedback = document.getElementById('feedbackLippen');
+    const a1 = this.vraag1.value;
+    const a2 = this.vraag2.value;
+    let score = 0;
+    if (a1 === 'faa') score++;
+    if (a2 === 'daal') score++;
+    feedback.textContent = `Je hebt ${score} van de 2 vragen goed.`;
+    feedback.style.color = score === 2 ? 'green' : 'red';
+  });
 
-    if (score === totaal) {
-      feedbackEl.innerHTML += ' Goed gedaan! 🎉';
-      feedbackEl.style.color = 'green';
-    } else {
-      feedbackEl.innerHTML += ' Probeer het nog eens.';
-      feedbackEl.style.color = 'red';
-    }
+  // Quiz Neus
+  document.getElementById('quizFormNeus').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const feedback = document.getElementById('feedbackNeus');
+    const a1 = this.vraag1.value;
+    const a2 = this.vraag2.value;
+    let score = 0;
+    if (a1 === 'noen') score++;
+    if (a2 === 'meem') score++;
+    feedback.textContent = `Je hebt ${score} van de 2 vragen goed.`;
+    feedback.style.color = score === 2 ? 'green' : 'red';
+  });
+
+  // Quiz Mondholte
+  document.getElementById('quizFormMondholte').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const feedback = document.getElementById('feedbackMondholte');
+    const a1 = this.vraag1.value;
+    const a2 = this.vraag2.value;
+    let score = 0;
+    if (a1 === 'alif') score++;
+    if (a2 === 'raa') score++;
+    feedback.textContent = `Je hebt ${score} van de 2 vragen goed.`;
+    feedback.style.color = score === 2 ? 'green' : 'red';
   });
 </script>
-
-</body>
-</html>
